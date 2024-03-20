@@ -7,7 +7,7 @@ info:
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/version"
+      - "{{BaseURL}}:6443/version"
     matchers-condition: and
     matchers:
       - type: status
@@ -20,7 +20,7 @@ requests:
           - "minor"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/namespaces"
+      - "{{BaseURL}}:6443/api/v1/namespaces"
     matchers-condition: and
     matchers:
       - type: status
@@ -33,7 +33,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/nodes"
+      - "{{BaseURL}}:6443/api/v1/nodes"
     matchers-condition: and
     matchers:
       - type: status
@@ -46,7 +46,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/roles"
+      - "{{BaseURL}}:6443/api/v1/roles"
     matchers-condition: and
     matchers:
       - type: status
@@ -59,7 +59,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/secrets"
+      - "{{BaseURL}}:6443/api/v1/secrets"
     matchers-condition: and
     matchers:
       - type: status
@@ -72,7 +72,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/services"
+      - "{{BaseURL}}:6443/api/v1/services"
     matchers-condition: and
     matchers:
       - type: status
@@ -85,7 +85,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/serviceaccounts"
+      - "{{BaseURL}}:6443/api/v1/serviceaccounts"
     matchers-condition: and
     matchers:
       - type: status
@@ -98,7 +98,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/apis/apps/v1/"
+      - "{{BaseURL}}:6443/apis/apps/v1/"
     matchers-condition: and
     matchers:
       - type: status
@@ -111,7 +111,7 @@ requests:
           - "resources"
   - method: GET
     path:
-      - "{{BaseURL}}/apis/apps/v1/daemonsets"
+      - "{{BaseURL}}:6443/apis/apps/v1/daemonsets"
     matchers-condition: and
     matchers:
       - type: status
@@ -124,7 +124,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/apis/apps/v1/deployments"
+      - "{{BaseURL}}:6443/apis/apps/v1/deployments"
     matchers-condition: and
     matchers:
       - type: status
@@ -137,7 +137,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/apis/rbac.authorization.k8s.io/v1beta1/clusterroles"
+      - "{{BaseURL}}:6443/apis/rbac.authorization.k8s.io/v1beta1/clusterroles"
     matchers-condition: and
     matchers:
       - type: status
@@ -150,7 +150,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/namespaces/default/pods"
+      - "{{BaseURL}}:6443/api/v1/namespaces/default/pods"
     matchers-condition: and
     matchers:
       - type: status
@@ -163,7 +163,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/namespaces/default/configmaps"
+      - "{{BaseURL}}:6443/api/v1/namespaces/default/configmaps"
     matchers-condition: and
     matchers:
       - type: status
@@ -176,7 +176,7 @@ requests:
           - "items"          
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/namespaces/default/secrets"
+      - "{{BaseURL}}:6443/api/v1/namespaces/default/secrets"
     matchers-condition: and
     matchers:
       - type: status
@@ -189,7 +189,7 @@ requests:
           - "items"          
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/namespaces/default/serviceaccounts"
+      - "{{BaseURL}}:6443/api/v1/namespaces/default/serviceaccounts"
     matchers-condition: and
     matchers:
       - type: status
@@ -202,7 +202,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/api/v1/namespaces/default/services"
+      - "{{BaseURL}}:6443/api/v1/namespaces/default/services"
     matchers-condition: and
     matchers:
       - type: status
@@ -215,7 +215,7 @@ requests:
           - "items"           
   - method: GET
     path:
-      - "{{BaseURL}}/apis/node.k8s.io/"
+      - "{{BaseURL}}:6443/apis/node.k8s.io/"
     matchers-condition: and
     matchers:
       - type: status
@@ -228,7 +228,7 @@ requests:
           - "versions"
   - method: GET
     path:
-      - "{{BaseURL}}/apis/apps/v1/namespaces/default/deployments"
+      - "{{BaseURL}}:6443/apis/apps/v1/namespaces/default/deployments"
     matchers-condition: and
     matchers:
       - type: status
