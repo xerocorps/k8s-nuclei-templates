@@ -7,7 +7,7 @@ info:
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/pods"
+      - "{{BaseURL}}:10250/pods"
     matchers-condition: and
     matchers:
       - type: status
@@ -20,7 +20,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/stats/summary"
+      - "{{BaseURL}}:10250/stats/summary"
     matchers-condition: and
     matchers:
       - type: status
@@ -33,7 +33,7 @@ requests:
           - "nodeName"
   - method: GET
     path:
-      - "{{BaseURL}}/metrics"
+      - "{{BaseURL}}:10250/metrics"
     matchers-condition: and
     matchers:
       - type: status
@@ -45,7 +45,7 @@ requests:
           - "content-type: text/plain"
   - method: GET
     path:
-      - "{{BaseURL}}/runningpods/"
+      - "{{BaseURL}}:10250/runningpods/"
     matchers-condition: and
     matchers:
       - type: status
@@ -58,7 +58,7 @@ requests:
           - "items"
   - method: GET
     path:
-      - "{{BaseURL}}/logs/"
+      - "{{BaseURL}}:10250/logs/"
     matchers-condition: and
     matchers:
       - type: status
@@ -70,7 +70,7 @@ requests:
           - "content-type: text/html"
   - method: GET
     path:
-      - "{{BaseURL}}/healthz"
+      - "{{BaseURL}}:10250/healthz"
     matchers-condition: and
     matchers:
       - type: status
