@@ -7,7 +7,7 @@ info:
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/version"
+      - "{{BaseURL}}:2379/version"
     matchers-condition: and
     matchers:
       - type: status
@@ -19,7 +19,7 @@ requests:
           - "etcdserver"          
   - method: GET
     path:
-      - "{{BaseURL}}/v2/keys/"
+      - "{{BaseURL}}:2379/v2/keys/"
     matchers-condition: and
     matchers:
       - type: status
@@ -32,7 +32,7 @@ requests:
           - "key" 
   - method: GET
     path:
-      - "{{BaseURL}}/v2/keys/?recursive=true"
+      - "{{BaseURL}}:2379/v2/keys/?recursive=true"
     matchers-condition: and
     matchers:
       - type: status
